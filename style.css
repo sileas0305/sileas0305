@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: "Lato", serif;
-	background-image: url('bank/imageDeFond.png');
+	background-image: url('imageDeFond.png');
 	background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -276,5 +276,16 @@ a {
 
     .modpack {
         width: 100%;
+    }
+    .illustration-image {
+        width: 500px;
+		height: 300px;
+    }
+    .bienvenu-content {
+        font-size: 30px;
+    }
+    .boite {
+        max-width: 500px;
+        display:block;
     }
 }
