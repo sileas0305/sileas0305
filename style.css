@@ -1,0 +1,280 @@
+
+.orbitron-body {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", serif;
+	background-image: url('bank/imageDeFond.png');
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    font-family: "Orbitron", serif;
+    background-color: #331811;
+    padding: 8px 0;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.menu a:hover {
+    background-color: #7C2F1E;
+    border-radius: 4px;
+}
+
+.menu a.actuelle {
+    background-color: #899138;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.p {
+	text-align: center;
+}
+
+.image {
+	width: 130px;
+	height: 130px;
+	left: 10px;
+	top: 5px;
+    position : absolute;
+}
+
+.derouleur {
+    position: relative;
+}
+
+.derouleur-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #331811;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.derouleur-menu li {
+    width: 200px;
+}
+
+.derouleur-menu li a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.derouleur-menu li a:hover {
+    background-color: #7C2F1E;
+}
+
+.derouleur:hover .derouleur-menu {
+    display: block;
+}
+
+.boite {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #50271cb5;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+
+.bienvenu {
+    flex-direction:column;
+    justify-content: center; 
+    align-items: center;
+    display:flex;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.bienvenu-content {
+    font-family: "Orbitron", serif;
+    font-size: 45px;
+    text-align: center;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.bienvenu-content2 {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.boite-content {
+    flex: 1;
+}
+
+.boite-title {
+    font-family: "Orbitron", serif;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.boite-summary {
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.boite-image {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.modpacks-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.illustration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.illustration-image {
+    width: 800px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.comparison-container {
+    display: grid;
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modpack {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.comparison-container .modpack h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.comparison-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #ffffff
+}
+
+.comparison-container table th,
+.comparison-container table td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+.comparison-container table th {
+    background-color: #331811;
+    color: white;
+}
+
+.li-color {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+		margin: 0;
+		font-family: Arial, Helvetica, sans-serif
+	}
+	
+	.menu {
+		display: flex;
+		padding: 5px;
+		background-color: #331811;
+		list-style-type: none;
+		margin: 0;
+		justify-content: flex-end;
+	}
+	
+	.menu a {
+		color: #ffffff;
+		text-decoration: none;
+		padding: 14px 20px;
+		font-size: 13px;
+		text-align:center;
+		transition: 0.3s;
+	}
+	
+	.menu a:hover {
+		background-color: #7C2F1E;
+		border-radius: 4px;
+	}
+	
+	.menu a.actuelle {
+		background-color: #899138;
+		color: #ffffff;
+		border-radius: 4px;
+	}
+	.image {
+		width: 75px;
+		height: 75px;
+		position:fixed;
+		left: 10px;
+		top: 5px;
+	}
+    .comparison-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .modpack {
+        width: 100%;
+    }
+}
